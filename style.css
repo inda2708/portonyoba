@@ -1,0 +1,512 @@
+:root {
+  background-image: url(btk16.jpg);
+  background-size: 100rem auto; /*Gambar akan memenuhi seluruh konten */
+  background-repeat: no-repeat;
+  background-position: center; /* Menempatkan gambar di tengah */
+  background-attachment: fixed; /*Menjaga gambar tetap saat menggulir */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--bg);
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 10%;
+  background-color: #11111197;
+  backdrop-filter: blur(4px);
+}
+
+.header .header-title {
+  color: #fff;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.header .header-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header .header-links a {
+  border-bottom: solid 1px transparent;
+  padding-bottom: 2px;
+}
+
+.header .header-links a:hover {
+  border-bottom: solid 1px #fff;
+}
+
+/* hero */
+.hero {
+  margin-top: 9.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 10%;
+}
+
+.hero .hero-content {
+  flex: 1;
+}
+
+.hero .hero-content .hero-title p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.hero .hero-content .hero-title h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  margin-bottom: 1.8rem;
+  border-bottom: solid 1px #fff;
+  width: fit-content;
+}
+
+.hero .hero-content .hero-title h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.hero .hero-content .hero-title .hero-cta {
+  margin-top: 3.5rem;
+  margin-bottom: 8.5rem;
+}
+
+.hero .hero-content .hero-title .hero-cta a {
+  padding: 8px 12px;
+  border: solid 1px #fff;
+  font-size: 1.1rem;
+}
+
+.hero .hero-content .hero-title .hero-cta a:hover {
+  background-color: #fff;
+  color: var(--bg);
+}
+
+.hero .hero-content .hero-info {
+  display: flex;
+}
+
+.hero .hero-content .hero-info h3 {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.hero .hero-content .hero-info p {
+  font-weight: 200;
+}
+
+.hero .hero-content .hero-info .info.center {
+  padding: 0rem 2.5rem;
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+.hero .hero-content .hero-info .info.left {
+  padding-right: 2.5rem;
+}
+
+.hero .hero-content .hero-info .info.right {
+  padding-left: 2.5rem;
+}
+
+.hero .hero-scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.hero .hero-scroll a {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.hero .hero-scroll a i {
+  font-size: 1.5rem;
+}
+
+/* about */
+.about {
+  padding: 8rem 10%;
+  padding-top: 12rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .about-content {
+  flex: 1;
+}
+
+.about .about-content strong {
+  font-size: 1.2rem;
+  border-bottom: solid 1px #fff;
+  padding-bottom: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.about .about-content h1 {
+  margin-top: 1.8rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.about .about-img {
+  flex: 1;
+  max-height: 55vh;
+  background: #000;
+}
+
+.about .about-img img {
+  max-height: 55vh;
+  object-fit: cover;
+  width: 100%;
+}
+.about .about-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Resume */
+.resume {
+  padding: 6rem 10%;
+}
+
+.resume .resume-title {
+  margin-bottom: 2rem;
+}
+
+.resume .resume-title strong {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.resume .resume-title h1 {
+  margin-top: 0.8rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 3.8rem;
+}
+
+.resume .resume-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5rem;
+}
+
+.resume .resume-content .resume-main h2 {
+  font-size: 2rem;
+  border-bottom: solid 1px #494949;
+  padding-bottom: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+
+.resume .resume-content .resume-main .resume-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resume .resume-content .resume-main .resume-list .list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9c9c9c;
+}
+
+.resume .resume-content .resume-main .resume-list .list-item .item-title h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.resume .resume-content .resume-main .resume-list .list-item .item-title span {
+  font-weight: 300;
+}
+
+.resume .resume-content .resume-main .resume-list .list-item .date {
+  padding: 8px 12px;
+  border: solid #636363 1px;
+  font-size: 1rem;
+}
+
+/* Skill */
+.skill {
+  padding: 6rem 10%;
+}
+
+.skill .title strong {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.skill .title h1 {
+  margin-top: 0.8rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.skill .skill-content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5rem;
+}
+
+.skill .skill-content .skill-type h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.skill .skill-content .skill-type .skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.skill .skill-content .skill-type .skill-list .skill-item {
+  padding: 12px 12px;
+  border: solid 1px #636363;
+}
+
+.skill .skill-content .skill-type .skill-list .skill-item h3 {
+  font-weight: 400;
+  color: #9c9c9c;
+  font-size: 1rem;
+}
+
+/* Projects */
+.project {
+  padding: 6rem 10%;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+}
+
+.project .project-title {
+  flex: 1;
+}
+
+.project .project-title strong {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.project .project-title h1 {
+  margin-top: 0.8rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.project .project-title p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.project .project-list {
+  flex: 3;
+  display: flex;
+  gap: 1rem;
+  min-height: 45vh;
+}
+
+.project .project-list .project-item {
+  flex: 1;
+  height: 100%;
+  border: solid 1px #636363;
+  padding: 1.4rem 1rem;
+}
+
+.project .project-list .project-item .project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.project .project-list .project-item .project-info h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.project .project-list .project-item .project-info p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.project .project-list .project-item .project-info a {
+  font-weight: 400;
+}
+
+/* contact */
+.contact {
+  display: flex;
+  padding: 6rem 10%;
+  margin-bottom: 8rem;
+  gap: 5rem;
+}
+
+.contact .contact-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact .contact-content .contact-title h1 {
+  margin-top: 0.8rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contact .contact-content .contact-title p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.contact .contact-content .contact-title strong {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.contact .contact-content .contact-sosmed {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.contact .contact-content .contact-sosmed a {
+  font-size: 2rem;
+}
+
+.contact .contact-form {
+  flex: 1.5;
+  padding: 2rem;
+  border: solid 1px #636363;
+}
+
+.contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact .contact-form form input {
+  padding: 1.2rem 1rem;
+  border: solid 1px #636363;
+  color: #fff;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.contact .contact-form form input:focus {
+  outline: none;
+}
+
+.contact .contact-form form .btn {
+  margin-top: 1.6rem;
+  width: fit-content;
+  padding: 1rem;
+  border: none;
+  background: transparent;
+  border: solid 1px #636363;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact .contact-form form .btn:hover {
+  background-color: #fff;
+  color: var(--bg);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  border-top: solid 1px #636363;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1.5rem 5%;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about,
+  .resume,
+  .project {
+    flex-direction: column;
+    text-align: center;
+  }
+  .project .project-list {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .header {
+    padding: 1.5rem 5%;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about,
+  .resume,
+  .project {
+    flex-direction: column;
+    text-align: center;
+  }
+  .project .project-list {
+    flex-direction: column;
+  }
+}
